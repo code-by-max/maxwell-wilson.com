@@ -1,0 +1,73 @@
+
+/* author Max Wilson */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+  /* Old browsers */
+  background: #141E30;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #35577D, #141E30);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: #7D5B35;
+  background: -webkit-linear-gradient(-45deg, #4E3921, #7D5B35);
+  border-bottom: 1px solid #7D5B35;
+  height: 50px;
+  
+}
+
+li {
+  color: #FFF;
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  padding-top: 17px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10px;
+}
+
+.edge{
+  border-left: 1px solid white;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:active {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
