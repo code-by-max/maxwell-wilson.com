@@ -16,10 +16,11 @@
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!--<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
 
 </head>
 
@@ -47,7 +48,7 @@
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills & Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -102,7 +103,7 @@
               </ul></p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2013 - Present</span>
+            <span class="text-primary">Summer 2019</span>
           </div>
         </div>
 
@@ -135,21 +136,9 @@
               </ul></p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
+            <span class="text-primary">Summer 2018</span>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
-          </div>
-        </div>
-
       </div>
 
     </section>
@@ -164,8 +153,11 @@
           <div class="resume-content">
             <h3 class="mb-0">Iowa State University</h3>
             <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Software Engineering</div>
-            <p>GPA: 3.67</p>
+            <p><ul class="dashed">
+                <li>Major: Software Engineering</li>
+                <li>GPA: 3.67</li>
+                </ul>
+              </p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2017 - May 2021</span>
@@ -184,7 +176,7 @@
             </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
+            <span class="text-primary">Summer 2018</span>
           </div>
         </div>
 
@@ -195,62 +187,49 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">Skills & Projects</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
+            <i class="devicon-java-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
+            <i class="devicon-cplusplus-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
+              <i class="devicon-python-plain"></i>
+            </li>
+          <li class="list-inline-item">
+            <i class="devicon-mysql-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
+              <i class="devicon-csharp-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-react"></i>
+            <i class="devicon-git-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
+            <i class="devicon-html5-plain"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
+            <i class="devicon-css3-plain"></i>
         </ul>
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
+        <div class="subheading mb-3">Projects</div>
+        <ul style="list-style: none;" class="fa-ul mb-0">
           <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
+            <h6 style="font-size: 1.2rem;" class="subheading mb-0">Python Tic Tac Toe</h6>
+            <p style="margin-left: 40px;">Developed method of storing tic tac toe moves in csv. I use 
+            stored data to train a neural network to play tic tac toe</p></li>
           <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
+            <h6 style="font-size: 1.2rem;" class="subheading mb-0">Python webscraper and display widget</h6>
+            <p style="margin-left: 40px;">Python program that scrapes weather data, 
+                dining hall menus, and news to display to the user</p></li>
           <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+            <h6 style="font-size: 1.2rem;" class="subheading mb-0">Tiny encryption algorithm encoder/decoder</h6>
+            <p style="margin-left: 40px;">Program build using verilog and circuit block diagrams. 
+            Takes in two 8-bit numbers  and four 8-bit keys, then either encrypts or decrypts them depending on settings</p></li>
         </ul>
       </div>
     </section>
@@ -260,13 +239,16 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        <p>Apart from my interests in programming and software development. I spend as much time 
+          as I can outdoors primarily hiking and canoing. Last summer I led 11-day wilderness whitewater 
+          canoe trips in northern Canada</p>
+        <p class="mb-0">When I'm not outdoors I enjoy movies and TV shows. My favorite movie is 
+          Intersteller, I highly recommend it to anyone remotely interested in space</p>
       </div>
     </section>
 
     <hr class="m-0">
-
+    <!--
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
@@ -300,7 +282,7 @@
         </ul>
       </div>
     </section>
-
+  -->
   </div>
 
   <!-- Bootstrap core JavaScript -->
