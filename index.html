@@ -18,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
 
   <!-- Custom styles for this template -->
   <link href="css/resume.css" rel="stylesheet">
@@ -80,10 +82,10 @@
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/code-by-max" target="_blank">
-            <i class="devicon-github-plain"></i>
+            <i class="fab fa-github"></i>
           </a>
           <a href="#">
-              <i class="devicon-twitter-plain"></i>
+              <i class="fab fa-twitter"></i>
             </a>
         </div>
       </div>
@@ -98,47 +100,33 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Software Engineer Intern</h3>
-            <div class="subheading mb-3">Principal Global Investors</div>
-            <p><ul class="dashed">
-                <li>Improved department efficiency by applying machine learning algorithms to JIRA Issue data</li>
-                <li>More in the works...</li>
-              </ul></p>
-          </div>
-          <div class="resume-date text-md-right">
+            <div class="subheading mb-0">Principal Global Investors</div>
             <span class="text-primary">Summer 2019</span>
+            <p class="mb-3" style="padding-top: 20px;">Improved department efficiency by applying machine learning algorithms to JIRA Issue data</p>
+            <p class="mb-0">More in the works...</p>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Computer Support Specialist</h3>
-            <div class="subheading mb-3">Iowa State University Information Technology</div>
-            <p><ul class="dashed">
-                <li>Deliver tech and network support for faculty</li>
-                <li>Database maintenance</li>
-                <li>Hardware Deployment</li>
-              </ul></p>
-          </div>
-          <div class="resume-date text-md-right">
+            <div class="subheading mb-0">Iowa State University Information Technology</div>
             <span class="text-primary">August 2018 - May 2019</span>
+            <p class="mb-3" style="padding-top: 20px;">Deliver tech and network support for faculty</p>
+            <p class="mb-3">Database maintenance</p>
+            <p class="mb-3">Hardware Deployment</p>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Camp Counselor</h3>
-            <div class="subheading mb-3">Camp Chippewa for boys</div>
-            <p><ul class="dashed">
-                <li>Led 11-day Canadian wilderness whitewater canoe trips with 15-year-old campers as a guide and mentor</li>
-                <li>Children ages 8-17 (responsible for cabin of 15-year-olds)</li>
-                <li>Wilderness overnight adventure summer camp</li>
-                <li>Organized and taught camp activities</li>
-                <li>Recognize and respond to camper behavioral issues</li>
-                <li>Serve as a leadership figure for children</li>
-              </ul></p>
-          </div>
-          <div class="resume-date text-md-right">
+            <div class="subheading mb-0">Camp Chippewa for boys</div>
             <span class="text-primary">Summer 2018</span>
+            <p class="mb-3" style="padding-top: 20px;">Led 11-day Canadian wilderness whitewater canoe trips with 15-year-old campers as a guide and mentor</p>
+            <p class="mb-3">Children ages 8-17 (responsible for cabin of 15-year-olds)</p>
+            <p class="mb-3">Organized and taught camp activities</p>
+            <p class="mb-0">Recognize and respond to camper behavioral issues</p>
           </div>
         </div>
       </div>
@@ -154,32 +142,27 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Iowa State University</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <p><ul class="dashed">
-                <li>Major: Software Engineering</li>
-                <li>GPA: 3.67</li>
-                </ul>
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
+            <div class="subheading mb-0">Bachelor of Science</div>
             <span class="text-primary">August 2017 - May 2021</span>
+                <p class="mb-3" style="padding-top: 20px;">Major: Software Engineering</p>
+                <p class="mb-0">GPA: 3.67</p>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Wilderness First Responder Certification</h3>
-            <div class="subheading mb-3">NOLS Wilderness Medicine</div>
-            <p><ul class="dashed">
-              <li>80-hour course</li>
-              <li>Classroom training and experiential scenarios; learned to care for patients 
-                  in backcountry when access to medical help is not readily available</li>
-              </ul>
-            </p>
+            <div class="subheading mb-0">NOLS Wilderness Medicine</div>
+            <span class="text-primary">Summer 2018</span>
+            <p class="mb-3" style="padding-top: 20px;">80-hour course</p>
+            <p class="mb-0">Classroom training and experiential scenarios; learned to care for patients 
+                in backcountry when access to medical help is not readily available</p>
           </div>
-          <div class="resume-date text-md-right">
+          <!-- Code to put date on the right side. Need to look into this in the future
+          <div class="resume-date text-md-right w-1">
             <span class="text-primary">Summer 2018</span>
           </div>
+        -->
         </div>
 
       </div>
@@ -249,16 +232,43 @@
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blog">
+    <hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-top" id="blog">
         <div class="w-100">
-            <h2 class="mb-4">Blog</h2>
-          <form action="" method="">
-          <p>Enter your email to subsribe to updates.</p>
-          <input type="text" size=30 value="" form="email" style="padding-left: 5px; padding-right: 7px; 
-                                                                  border-radius: 20px; border: 2px solid #4B83F4; font-size: 12;">
-          <input type="submit" value="Submit" style="margin-left: 25px; border-radius: 5px; border: 2px solid #4B83F4; 
-                                                            background: #4B83F4; color:rgb(255, 255, 255)">
+          <h2 class="mb-4">Blog</h2>
+          <p id="message">Enter your email to subscribe to updates.</p>
+          <form id="email_form">
+            <input type="text" size=30 value="" id="var" form="email" style="padding-left: 5px; padding-right: 7px; 
+                                                                    border-radius: 20px; border: 2px solid #4B83F4; font-size: 12;">
+            <input type="button" value="Submit" 
+                   onclick="submitEmail()" 
+                   style="margin-left: 25px; border-radius: 5px; border: 2px solid #4B83F4; background: #4B83F4; color:rgb(255, 255, 255)">
           </form>
+          <script language="JavaScript">
+            function submitEmail() {
+              firebase.initializeApp({
+                apiKey: 'AIzaSyC00vMD7AAIUOlS6qWRCxO9GKv0kxzzBBY',
+                authDomain: 'my-website-246300.firebaseapp.com',
+                projectId: 'my-website-246300'
+              });
+
+              var db = firebase.firestore();
+
+              var submitted_email = document.getElementById("var").value
+
+              db.collection("users").add({
+                email: submitted_email
+              })
+              .then(function(docRef) {
+                  console.log("Document written with ID: ", docRef.id);
+                  document.getElementById("message").textContent = "Submitted! Thank you"
+              })
+              .catch(function(error) {
+                  console.error("Error adding document: ", error);
+              });
+            }
+          </script>        
         </div>
       </section>
     <!--
