@@ -247,7 +247,6 @@
           </form>
           <script language="JavaScript">
             function submitEmail() {
-              document.getElementById('var').value = ''
               firebase.initializeApp({
                 apiKey: '',
                 authDomain: 'my-website-246300.firebaseapp.com',
@@ -258,6 +257,8 @@
 
               var submitted_email = document.getElementById("var").value
 
+              document.getElementById('var').value = ''
+              
               db.collection("users").add({
                 email: submitted_email
               })
