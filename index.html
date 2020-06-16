@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+  <link rel="Shortcut icon" href="favicon.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -20,9 +20,20 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+  <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
 
   <!-- Custom styles for this template -->
   <link href="css/resume.css" rel="stylesheet">
+  <style>
+    .icon:hover {
+      /*color:#4B83F4;*/
+      color:#F4BC4B;
+    }
+
+    .accent {
+      color:#F4BC4B;
+    }
+  </style>
 
 </head>
 
@@ -31,9 +42,6 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Maxwell Wilson</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/headshot.jpg" alt="">
-      </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -50,14 +58,14 @@
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills & Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-          </li>
+        </li>
       </ul>
     </div>
   </nav>
@@ -69,14 +77,12 @@
         <h1 class="mb-0">Maxwell
           <span class="text-primary">Wilson</span>
         </h1>
-        <div class="subheading mb-5">2702 S Cole Ct · Lakewood, CO 80228 · (303) 524-4797 ·
+        <div class="subheading mb-5">Lakewood, CO · (303) 524-4797 ·
           <a href="mailto:maw1@iastate.edu">maw1@iastate.edu</a>
         </div>
-        <p class="lead mb-5">Junior studying Software Engineering at Iowa State University. 
-                             Prospective Software Developer looking to learn as much as possible 
-                             before graduation. Recently returned from studying abroad at Nanyang 
-                             Technological University in Singapore. Currently, finishing the Spring 
-                             semester in Ames, Iowa.
+        <p class="lead mb-5">I am a rising Senior studying Software Engineering at Iowa State University. 
+                             I'll be graduating in December 2021. Recently, I gained extensive experience building REST APIs and microservices in Java and Kotlin. 
+                             Currently, I am working as a Software Engineering Intern with Cerner Corporation for the summer and looking for 2021 internship opportunities. 
                              </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/maxwell-wilson" target="_blank">
@@ -114,7 +120,7 @@
           <div class="resume-content">
             <h3 class="mb-0">Computer Support Specialist</h3>
             <div class="subheading mb-0">Iowa State University Information Technology</div>
-            <span class="text-primary">August 2018 - May 2019</span>
+            <span class="text-primary">August 2018 - Present</span>
             <p class="mb-3" style="padding-top: 20px;">Delivered efficient tech and network support for faculty and administration</p>
             <p class="mb-3">Managed university hardware storage and replaced old hardware as needed</p>
           </div>
@@ -183,68 +189,149 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills & Projects</h2>
+        <h2 class="mb-5">Skills</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <div class="subheading mb-3">Languages</div>
         <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="devicon-java-plain"></i>
+          <li class="list-inline-item icon iconify" data-icon="mdi:language-kotlin" title="Kotlin">
           </li>
           <li class="list-inline-item">
-            <i class="devicon-cplusplus-plain"></i>
+            <i class="devicon-python-plain icon" title="Python"></i>
           </li>
           <li class="list-inline-item">
-              <i class="devicon-python-plain"></i>
-            </li>
-          <li class="list-inline-item">
-          	<i class="devicon-javascript-plain"></i>
+            <i class="devicon-java-plain" title="Java"></i>
           </li>
           <li class="list-inline-item">
-          	<i class="devicon-nodejs-plain"></i>
+          	<i class="devicon-javascript-plain" title="JavaScript"></i>
           </li>
           <li class="list-inline-item">
-              <i class="devicon-csharp-plain"></i>
+            <i class="devicon-cplusplus-plain" title="C++"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-git-plain"></i>
+              <i class="devicon-csharp-plain" title="C#"></i>
+          </li>
+        </ul>
+        <div class="subheading mb-3">Frameworks and Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item icon iconify" data-icon="cib:spring" title="Spring Boot">
+          </li>
+          <li class="list-inline-item icon iconify" data-icon="cib:google-cloud" title="Google Cloud">
+          </li>
+          <li class="list-inline-item icon iconify" data-icon="cib:firebase" title="Firebase">
+          </li>
+          <li class="list-inline-item icon iconify" data-icon="cib:gradle" title="Gradle">
+          </li>
+          <li class="list-inline-item icon iconify" data-icon="simple-icons:docker" title="Docker">
           </li>
           <li class="list-inline-item">
-            <i class="devicon-html5-plain"></i>
+          	<i class="devicon-nodejs-plain" title="Node.js"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-css3-plain"></i>
+          	<i class="devicon-mongodb-plain" title="MongoDB"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-mysql-plain"></i>
+            <i class="devicon-mysql-plain" title="MySQL"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-html5-plain" title="HTML"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-css3-plain" title="CSS"></i>
+          </li>
+          <li class="list-inline-item icon iconify" data-icon="cib:bootstrap" title="Bootstrap">
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-git-plain" title="Git"></i>
           </li>
         </ul>
 
-        <div class="subheading mb-3">Projects</div>
-        <ul style="list-style: none;" class="fa-ul mb-0">
+        <div class="subheading mb-3">Technical Interests:</div>
+        <ul class="fa-ul mb-0">
           <li>
-            <h6 style="font-size: 1.2rem;" class="subheading mb-0">Spotify Queue</h6>
-            <p style="margin-left: 40px;">Identified that the Spotify Alexa Skill did not allow for queuing of music</p>
-        	<p style="margin-left: 40px;">Created Node.js web app hosted on Google Cloud to make calls to Spotify’s Web API</p>
-			<p style="margin-left: 40px;">Developed Amazon Alexa Skill in Python to interface with web app and allow queuing of music through Alexa</p></li>
+            <i class="accent fa-li fa fa-square"></i>
+            Enjoying building APIs and working with databases in the backend</li>
           <li>
+            <i class="accent fa-li fa fa-square"></i>
+            Using Spotify's API to queue music with Amazon Alexa and Google Assistant</li>
           <li>
-            <h6 style="font-size: 1.2rem;" class="subheading mb-0">Python Tic Tac Toe</h6>
-            <p style="margin-left: 40px;">Python machine learning program that plays tic-tac-toe using Scikit-Learn Decision Tree Classification model</p>
-        	<p style="margin-left: 40px;"> Designed method of storing tic-tac-toe moves to build a large data setme.</p>
-			<p style="margin-left: 40px;">Model wins or draws 97.7% of the time against a random opponent</p></li>
+            <i class="accent fa-li fa fa-square"></i>
+            Thinking of doing some data analytics of my Spotify listening habits</li>
+          <li>
+            <i class="accent fa-li fa fa-square"></i>
+            Dabbling with machine learning and neural networks in Python</li>
         </ul>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from my interests in programming and software development. I spend as much time 
-          as I can outdoors primarily hiking and canoeing. Last summer I led 11-day wilderness whitewater 
-          canoe trips in northern Canada</p>
-        <p class="mb-0">Currently I'm having a fantastic time studying abroad at Nanyang Technological University in Singapore. I'm taking a couple classes towards my major but otherwise trying to see a much of Southeast Asia as I can before the semester ends. Take a look at my blog down below for some updates on what I'm up to.</p>
+        <h2 class="mb-5">Projects</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 no-break">FoodBuddy</h3> 
+            <a class="social-mini fab fa-github" target="_blank" href="https://github.com/mvandewille/FoodBuddy"></a>
+            <p class="text-primary">Spring 2020</p>
+            <p><strong>Description:  </strong> iOS app to help track daily nutrition. Scan a Nutrition Facts label with your phone's camera and the app will scan the label and save the nutrition information. Then just imput how many servings you had and the totals will be added to your day.</p>
+            <div><strong>Languages: </strong>Kotlin, Swift, Java, Python</div>
+            <br>
+            <div><strong>Technologies: </strong>Springboot, MongoDB, Gradle, Mockito, Swagger, WebSockets</div>
+            <div></div>
+            <br>
+          </div>
+        </div>
+          
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 no-break">Spotify Queue</h3>
+            <a class="social-mini fab fa-github" target="_blank" href="https://github.com/codebymax/spotify_queue"></a>
+            <p class="text-primary">Summer 2019-Present</p>
+            <p><strong>Description:  </strong>I've always wanted to be able to queue up music on Spotify using my Amazon Alexa. But, that functionality doesn't come built-in. So this app attempts to create a custom queue to use with Alexa. It's a bit messy and unfinished currently, but it does work in a browser. Unfortunately, because of all the security and data privacy requirements needed by Amazon, account linking with Alexa is not working yet. Here's a link to the <a target="_blank" href="https://alexaq.appspot.com/">project</a> hosted on Google Cloud.</p>
+            <div><strong>Languages: </strong>JavaScript</div>
+            <br>
+            <div><strong>Technologies: </strong>Node.js, Google Cloud App Engine, Firebase, HTML, CSS, Bootstrap</div>
+          </div>
+        </div>
+          
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Machine Learning with Jira</h3>
+            <p class="text-primary">Summer 2019</p>
+            <p><strong>Description:  </strong>This tool helps manage JIRA tickets within the company and track the time spent on each issue. <br><br>The model was built by first clustering all of the training data into 5-7 clusters. A random forest regression algorithm is run on each cluster to generate a model for that cluster. These models used together create the model for the whole dataset.<br><br>When a new issue comes in and is processed first the program determines which cluster the new issue fits in. Then the model for the chosen cluster is used to predict time spent on the new issue.</p>
+            <div><strong>Languages: </strong>Python</div>
+            <br>
+            <div><strong>Technologies: </strong>Scikit-Learn, Keras, XGBoost, Natural Language Toolkit, Pandas</div>
+            <br>
+            <div><strong>Built during internship with Principal Global Investors. No source code available.</strong></div>
+          </div>
+        </div>
+          
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 no-break">Tic-Tac-Toe</h3> 
+            <a class="social-mini fab fa-github" target="_blank" href="https://github.com/codebymax/tic-tac-toe"></a>
+            <p class="text-primary">Summer-Fall 2019</p>
+            <p><strong>Description:  </strong>Python program using machine learning to "teach" the computer to play tic-tac-toe. The program plays lots of games against an opponent that plays randomly to build up a dataset. When the program wins, it gets rewarded, and when it loses, it gets punished. Over time it "learns" which moves result in a win and which do not.</p>
+            <div><strong>Languages: </strong>Python</div>
+            <br>
+            <div><strong>Technologies: </strong>Scikit-Learn, Pandas</div>
+          </div>
+        </div>
+          
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0 no-break">327 Dungeon Game</h3>
+            <a class="social-mini fab fa-github" target="_blank" href="https://github.com/codebymax/dungeon_explorer"></a>
+            <p class="text-primary">Spring 2019</p>
+            <p><strong>Description:  </strong>The game board is built out of ASCII characters in the terminal. The main character is the ‘@’ symbol representing the adventurer. The player moves the adventurer around the rooms and corridors of the dungeon picking up items and slaying monsters. Items can be equipped to boost the adventurer’s stats to make slaying monsters easier. The game ends when either every monster in the dungeon has been slain or the adventurer’s health reaches 0. If the player wants to continue the game they just have to move to a stairs tile and take the stairs to a new dungeon with new items and monsters.</p>
+            <p>This game was made over the course of the 2019 Spring semester in Comp Sci 327. It began as a C project which transitioned to a C++ project as the semester went on.</p>
+            <div><strong>Languages: </strong>C, C++</div>
+            <br>
+          </div>
+        </div>
+          
       </div>
     </section>
 
@@ -257,9 +344,7 @@
           <form id="email_form">
             <input type="text" size=30 value="" id="var" form="email" style="padding-left: 5px; padding-right: 7px; 
                                                                     border-radius: 20px; border: 2px solid #4B83F4; font-size: 12;">
-            <input type="button" value="Submit" 
-                   onclick="submitEmail()" 
-                   style="margin-left: 25px; border-radius: 5px; border: 2px solid #4B83F4; background: #4B83F4; color:rgb(255, 255, 255)">
+            <input class="email_button" type="button" value="Submit" onclick="submitEmail()" >
           </form>
           <script language="JavaScript">
             function submitEmail() {

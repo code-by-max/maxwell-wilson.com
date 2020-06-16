@@ -42,6 +42,10 @@ h3 {
   font-size: 2rem;
 }
 
+.no-break {
+    display: inline !important;
+}
+
 .rotateimg90 {
   -webkit-transform:rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -62,6 +66,19 @@ p.lead {
   font-size: 1.5rem;
 }
 
+.email_button {
+  margin-left: 25px; 
+  border-radius: 5px; 
+  border: 2px solid #4B83F4;
+  background: #4B83F4; 
+  color: #FFFFFF;
+}
+
+.email_button:hover {
+  background-color: #FFFFFF;
+  color: #4B83F4;
+}
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
@@ -80,7 +97,24 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #4B83F4; /* original color #BD5D38  light blue: #35BCEB */
+  background-color: #F4BC4B; /* original color #BD5D38  light blue: #35BCEB */
+}
+
+.social-mini {
+    color: #495057;
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-decoration: none !important;
+    display:inline-block;
+}
+
+.social-mini:hover {
+    color: #F4BC4B;
+}
+
+div.resume-content a::after {
+    content: "\A";
+    white-space: pre;
 }
 
 .dev-icons {
@@ -88,7 +122,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #4B83F4; /* original color #BD5D38 */
+  color: #F4BC4B; /* original color #BD5D38 */
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -191,10 +225,6 @@ section.resume-section .resume-item .resume-date {
   color: #4B83F4 !important;
 }
 
-a {
-  color: #4B83F4;
-}
-
-a:hover, a:focus, a:active {
-  color: #4B83F4;
+.text-secondary {
+  color: #F4BC4B !important;
 }
